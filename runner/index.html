@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Unity WebGL Player | WebGL Unity Project</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <link rel="stylesheet" href="../css/stylegames.css">
+  <link rel="stylesheet" href="../css/btn.css">
+  <script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/TestWeb.json", { onProgress: UnityProgress });
+  </script>
+</head>
+
+<body>
+  <div id="instruction">
+    <section class="buttons"><a href="../index.html" class="btn btn-4"><span>Atras</span></a>
+    </section>
+
+    <table>
+      <tr>
+        <th colspan="2">Teclas de juego</th>
+      </tr>
+      <tr>
+        <td>Atacar: CTRL</td>
+        <td>Saltar: Espacio</td>
+      </tr>
+      <tr>
+        <td><img src="source/instruccion1.PNG" alt="" style="width: 10em;"></td>
+      </tr>
+      <tr>
+        <td>Derecha e Izquierda: flechas</td>
+      </tr>
+      <tr>
+        <td><img src="source/instruccion2.PNG" alt="" style="width: 10em;"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="webgl-content">
+    <div id="unityContainer" style="width: 860px; height: 500px"></div>
+    <div class="footer">
+      <div class="webgl-logo"></div>
+      <div class="fullscreen cursor-pointer" onclick="unityInstance.SetFullscreen(1)" title="Click fullScreen"></div>
+    </div>
+  </div>
+</body>
+
+</html>
